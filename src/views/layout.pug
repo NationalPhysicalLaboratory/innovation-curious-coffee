@@ -5,16 +5,18 @@ html
         link(rel='stylesheet' href='/bootstrap/css/bootstrap.min.css')
         link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.2/css/all.css' integrity='sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr' crossorigin='anonymous')
         link(rel='stylesheet' href='/stylesheets/custom.css')
-        link(rel='stylesheet' href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap")
+        link(rel='stylesheet' href="https://fonts.googleapis.com/css?family=Amatic+SC")
         link(rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.14.2/dist/bootstrap-table.min.css")
 
     body
-        img(src='/icons/catapult.png' class='force-img-load')
+        img(src='/icons/chameleon.png' class='force-img-load')
+        //div(class='jumbotron')
         div(class='jumbotron pull-right')
             div(class='row')
-                div(class='col-sm-10')
-                div(class='col-sm-2')
-                    img(src='/icons/catapult.png')
+                div(class='col-sm-11 vertical-center text-right')
+                    h1(class='banner-header') Are you curious?
+                div(class='col-sm-1')
+                    img(src='/icons/chameleon.png')
         div(class='container')
 
             block navBar
@@ -30,6 +32,8 @@ html
                                 a(class='nav-link' href='/register') Register
                             li(class='nav-item')
                                 a(class='nav-link' href='/feedback') Feedback
+                            li(class='nav-item')
+                                a(class='nav-link' href='/faq') FAQ
                             li(class='nav-item')
                                 a(class='nav-link' href='/stats/participantsByDepartment') Participants by department
                         ul(class='navbar-nav ml-auto')

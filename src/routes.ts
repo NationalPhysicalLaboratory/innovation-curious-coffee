@@ -1,6 +1,7 @@
 import express from 'express';
 
 import deregister from './registration/deregister';
+import faq from './faq';
 import feedback from './feedback';
 import homepage from './homepage';
 import oops from './error';
@@ -22,6 +23,7 @@ const router = express.Router();
 router.use('/', homepage);
 
 router.use('/deregister', deregister);
+router.use('/faq', faq);
 router.use('/feedback', feedback);
 router.use('/oops', oops);
 router.use('/register', register);

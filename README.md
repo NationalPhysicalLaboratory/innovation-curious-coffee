@@ -2,9 +2,9 @@
     <img src="readme-images/curious-coffee.png" alt="Curious Coffee" title="Curious Coffee" width="30%" />
 </p>
 
-![Build and test](https://github.com/drosser/innovation-curious-coffee/workflows/Build%20and%20test/badge.svg)
+![Build and test](https://github.com/companieshouse/innovation-curious-coffee/workflows/Build%20and%20test/badge.svg)
 
-# Curious Coffee
+# #CuriousCoffee
 Source code for the Curious Coffee initiative
 
 ## Table of content
@@ -20,7 +20,7 @@ Source code for the Curious Coffee initiative
 - [Deploying curious coffee](#deploy)
 
 ## Introduction
-Curious Coffee is a initiative designed to break down silos within an organisation and match participants with people from different departments. Participants can register on the site and the system will ad-hoc match participants, as well as email them to inform them they've been matched and with who. It's then up to the matched participants to decide what to do next.
+#CuriousCoffee is a initiative designed to break down silos within an organisation and match participants with people from different departments. Participants can register on the site and the system will ad-hoc match participants, as well as email them to inform them they've been matched and with who. It's then up to the matched participants to decide what to do next.
 
 It is written in TypeScript, and by default uses MongoDB as it's data store and AWS-SES as it's notifier.
 
@@ -75,7 +75,7 @@ The environment variables needed are below.
 To deploy your own implementation of Curious Coffee:
 
 ```
-git clone https://github.com/drosser/innovation-curious-coffee.git
+git clone https://github.com/companieshouse/innovation-curious-coffee.git
 ```
 
 Inside the directory: 
