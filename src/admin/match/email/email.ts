@@ -31,7 +31,7 @@ export async function post(req: Request, res: Response): Promise<void> {
                 match.person_2.email
             ],
             subject: "It's a match!",
-            body: "Congratulations! You have both been matched together to go and get a #CuriousCoffee."
+            body: "Congratulations! You have both been matched together to go and get a Curious Coffee."
                 + " Now its over to you to start the conversation!"
         };
         const params: Params = {

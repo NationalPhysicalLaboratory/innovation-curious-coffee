@@ -50,14 +50,14 @@ export async function get(req: Request, res: Response): Promise<void> {
             sendFrom: "curious-coffee@companieshouse.gov.uk",
             sendTo: [decodedEmail],
             subject: "Registration confirmed!",
-            body: "<p>Congratulations! You have signed up for #CuriousCoffee. You will receive an email in due course matching you for your #CuriousCoffee</p>"
+            body: "<p>Congratulations! You have signed up for Curious Coffee. You will receive an email in due course matching you for your Curious Coffee</p>"
         };
         const params: Params = {
             email: email
         };
         notify(params);
 
-        req.flash('info', 'Congratulations! You have signed up for #CuriousCoffee. You will receive an email in due course matching you for your #CuriousCoffee');
+        req.flash('info', 'Congratulations! You have signed up for Curious Coffee. You will receive an email in due course matching you for your Curious Coffee');
         return res.redirect('/');
     } else {
         return res.redirect('/');

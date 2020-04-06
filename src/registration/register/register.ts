@@ -80,7 +80,7 @@ export async function post(req: Request, res: Response): Promise<void> {
             sendFrom: "curious-coffee@companieshouse.gov.uk",
             sendTo: [req.body.email],
             subject: "Verification - Curious Coffee",
-            body: "<p>Thank you for registering for #CuriousCoffee. To complete registration, please verify with the link below.</p>"
+            body: "<p>Thank you for registering for Curious Coffee. To complete registration, please verify with the link below.</p>"
             + "<br/>"
             + "<a href=\"" + config.verify.url + Buffer.from(req.body.email + config.verify.signature).toString('base64') + "\">Verify</a>"
         };
@@ -89,7 +89,7 @@ export async function post(req: Request, res: Response): Promise<void> {
         };
         notify(params);
     
-        req.flash('info', 'Thank you for registering for #CuriousCoffee. To complete registration, please verify with the link sent to you in an email.');
+        req.flash('info', 'Thank you for registering for Curious Coffee. To complete registration, please verify with the link sent to you in an email.');
         return res.redirect('/');
     }
 }
